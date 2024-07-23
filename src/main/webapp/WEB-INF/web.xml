@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>banco_platinum</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
   <servlet>
     <servlet-name>RegistrarPersonaServlet</servlet-name>
     <servlet-class>RegistrarPersonaServlet</servlet-class>
@@ -25,13 +34,22 @@
     <servlet-name>RegistrarEjecutivoServlet</servlet-name>
     <url-pattern>/registrarejecutivo</url-pattern>
   </servlet-mapping>
-  <display-name>banco_platinum</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <servlet-name>ConsultaEjecutivosServlet</servlet-name>
+    <servlet-class>ConsultaEjecutivosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConsultaEjecutivosServlet</servlet-name>
+    <url-pattern>/consultarEjecutivos</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <servlet-name>TransferenciaServlet</servlet-name>
+    <servlet-class>TransferenciaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransferenciaServlet</servlet-name>
+    <url-pattern>/transferencia</url-pattern>
+  </servlet-mapping>
 </web-app>

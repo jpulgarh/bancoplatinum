@@ -33,6 +33,11 @@
             </div>
             <input type="submit" value="Registrar Ejecutivo">
         </form>
+        <%
+	        if (request.getParameter("error") != null) {
+	            out.println("<p style='color:red;'>Error al ingresar las credenciales</p>");
+	        }
+	    %>
     </div>
 </body>
 </html>

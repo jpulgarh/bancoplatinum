@@ -24,11 +24,20 @@
                 <input type="text" id="departamento" name="departamento">
             </div>
             <div class="form-group">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+            </div>
+            <div class="form-group">
                 <label for="clave">Clave:</label>
                 <input type="password" id="clave" name="clave">
             </div>
             <input type="submit" value="Registrar Ejecutivo">
         </form>
+        <%
+	        if (request.getParameter("error") != null) {
+	            out.println("<p style='color:red;'>Error al ingresar las credenciales</p>");
+	        }
+	    %>
     </div>
 </body>
 </html>

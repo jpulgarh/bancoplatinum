@@ -9,15 +9,12 @@
 <body>
     <div class="form-container">
         <form action="ingresar" method="post">
-            <label for="rut">RUT:</label>
-            <input type="text" id="rut" name="rut"><br>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" id="usuario" name="usuario"><br>
             <label for="password">Clave:</label>
             <input type="password" id="password" name="password"><br>
-            <label>Tipo de usuario:</label>
-            <input type="radio" id="ejecutivo" name="tipo" value="ejecutivo">
-            <label for="ejecutivo">Ejecutivo</label><br>
-            <input type="radio" id="persona" name="tipo" value="persona">
-            <label for="persona">Persona</label><br>
+            <label for="rut">RUT:</label>
+            <input type="text" id="rut" name="rut"><br>
             <input type="submit" value="Ingresar">
         </form>
         <% if (request.getParameter("error") != null) { %>

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a la plataforma de Banco Platinum!</h1>
+        <h1>Bienvenido a la plataforma de Banco Platinum</h1>
         <p><a href="registrarejecutivo.jsp" class="btn-link">Registrar Ejecutivo</a></p>
         <p><a href="registrarpersona.jsp" class="btn-link">Registrar Persona</a></p>
         <p><a href="ingresar.jsp" class="btn-link">Ingresar</a></p>
